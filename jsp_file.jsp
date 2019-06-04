@@ -3,7 +3,7 @@
   <title>Echoing HTML Request Parameters</title>
 </head>
 <body>
-  <h3>Choose an author: !</h3>
+  <h3>Choose an author:</h3>
   <form method="get">
     <input type="checkbox" name="author" value="Tan Ah Teck">Tan
     <input type="checkbox" name="author" value="Mohd Ali">Ali
