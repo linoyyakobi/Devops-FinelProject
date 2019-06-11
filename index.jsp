@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<h1>Hello Ziv!</h1>
-		<h2>Thank you for interesting curse, good luck in the next curse!</h2>
+		<h2>Thank you for interesting course, good luck in the next semester!</h2>
 		<h3>Current time is <%= LocalDateTime.now() %></h3>
 	</body>
 </html>
@@ -20,12 +20,11 @@
 </head>
      
 <body>
-  <h2>Choose authors:</h2>
+  <h2>Choose our grade:</h2>
   <form method="get">
-    <input type="checkbox" name="author" value="Tan Ah Teck">Tan
-    <input type="checkbox" name="author" value="Mohd Ali">Ali
-    <input type="checkbox" name="author" value="Kumar">Kumar
-    <input type="checkbox" name="author" value="Peter Johnson">Peter
+    <input type="checkbox" name="author" value="נכשל">Tan
+    <input type="checkbox" name="author" value="עובר">Ali
+    <input type="checkbox" name="author" value="100">Kumar
     <input type="submit" value="Query">
   </form>
   
