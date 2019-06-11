@@ -28,7 +28,7 @@
 <body>
   <h2>Choose our grade:</h2>
   <form method="get">
-    <input type="checkbox" name="author" value="נכשל">fail
+    <input type="checkbox" name="author" value="עובר">fail
     <input type="checkbox" name="author" value="עובר">pass
     <input type="checkbox" name="author" value="100 ,good job ">100
     <input type="submit" value="Query">
