@@ -10,6 +10,10 @@
 		<h1>Hello Ziv!</h1>
 		<h2>Thank you for interesting course, good luck in the next semester!</h2>
 		<h3>Current time is <%= LocalDateTime.now() %></h3>
+		
+		
+		
+		
 	</body>
 </html>
 
@@ -19,9 +23,6 @@
   <title>Echoing HTML Request Parameters</title>
 </head>
      	
-	
-	
-	
 	
 	
 <body>
