@@ -32,7 +32,7 @@
   String[] authors = request.getParameterValues("author");
   if (authors != null) {
   %>
-    <h3>You have selected author(s):</h3>
+    <h3>You have selected grade(s):</h3>
     <ul>
       <%
       for (String author : authors) { 
