@@ -1,38 +1,39 @@
-<%@page language="java" contentType="text/html" pageEncoding="UTF-8" %>
-<!DOCTYPE HTML >
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Echoing HTML Request Parameters</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guru Registration Form</title>
 </head>
-     
 <body>
-  <h2>Choose authors:</h2>
-  <form method="get">
-    <input type="checkbox" name="author" value="Tan Ah Teck">Tan
-    <input type="checkbox" name="author" value="Mohd Ali">Ali
-    <input type="checkbox" name="author" value="Kumar">Kumar
-    <input type="checkbox" name="author" value="Peter Johnson">Peter
-    <input type="submit" value="Query">
-  </form>
-  
-  <% 
-  String[] authors = request.getParameterValues("author");
-  if (authors != null) {
-  %>
-    <h3>You have selected author(s):</h3>
-    <ul>
-      <%
-      for (String author : authors) { 
-      %>
-        <li><%= author %></li>
-      <%
-      }
-      %>
-    </ul>
-  <%
-  }
-  %>
-  <br /><a href="<%= request.getRequestURI() %>">BACK</a> 
-<body>
+<h1>Guru Register Form</h1>
+<form action="guru_register" method="post">
+			<table style="with: 50%">
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" name="first_name" /></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" name="last_name" /></td>
+				</tr>
+				<tr>
+					<td>UserName</td>
+					<td><input type="text" name="username" /></td>
+				</tr>
+					<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" name="address" /></td>
+				</tr>
+				<tr>
+					<td>Contact No</td>
+					<td><input type="text" name="contact" /></td>
+				</tr></table>
+			<input type="submit" value="Submit" /></form>
+</body>
 </html>
